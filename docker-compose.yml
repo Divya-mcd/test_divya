@@ -1,0 +1,7 @@
+services:
+  web:
+    build: .
+    image: internal/welcome-app
+    restart: unless-stopped
+    ports:
+      - "${APP_PORT}:3000"
